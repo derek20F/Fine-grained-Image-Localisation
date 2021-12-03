@@ -1,8 +1,8 @@
 # COMP90083_Fine-grained_Localisation
 
-In this project, our task is to recognise the gine-grained geolocation from which an image is taken.
+In this project, our task is to recognise the fine-grained geolocation from which an image is taken. We first use a pre-trained vision transform model to extract the global scene features of the input image. Then, those extracted features are used to compute the similarity scores between the test images and training images (the images with known position data), and find the top-10 similar training-test image pairs. After that, we use LoFTR, a transformer-based detector-free model, to match points in the image pair. Based on the detected matching points, we use RANSAC to compute the essential matrix of the image pair.  Finally, the essential matrix is used to fine-tune the geolocation coordinates of the test image. Our method predicts very precise geolocation coordinates and ranked 11/215 in the Kaggle competition.
 
-
+**Kaggle competition link:** https://www.kaggle.com/t/18c668eea8784f89b8d1af703856f55a
 
 # Authors
 
