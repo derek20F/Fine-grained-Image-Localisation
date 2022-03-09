@@ -2,6 +2,7 @@
 * Estimated the fine-grained geolocation from which an image is taken by using computer vision techniques (ViT for feature extraction, LoFTR for points matching, RANSAC for essential matrix computation)
 * Ranked 11/215 in the Kaggle competition
 
+---
 
 # COMP90083_Fine-grained_Localisation
 
